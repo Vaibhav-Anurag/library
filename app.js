@@ -33,7 +33,7 @@ app.use(
 );
 //setting up mongoose connection
 mongoose.set("strictQuery", false);
-const dev_db_url = process.env.MongoDBString;
+//const dev_db_url = process.env.MongoDBString;
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err) => console.log(err));
